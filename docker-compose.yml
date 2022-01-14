@@ -1,0 +1,9 @@
+version: '3'
+services:
+  
+  web:
+    image: finalone
+    environment: ${TEST}
+    ports:
+    - 8081:80/tcp
+    - 2022:22/tcp
