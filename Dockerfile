@@ -13,4 +13,4 @@ ADD supervisord.conf /etc/supervisor/supervisord.conf
 ADD id_rsa /root/.ssh/authorized_keys
 
 EXPOSE 22 80
-CMD ["/usr/bin/supervisord"]
+ENTRYPOINT ["/bin/echo", "Hi, your ENTRYPOINT instruction in Exec Form !"]
